@@ -24,7 +24,7 @@
 <link rel="icon" type="image/svg+xml" href="logo.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Luckiest+Guy&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 <style>
   :root{
     --bg:#e9e0cc; --panel:#f3ecda; --ink:#15120b; --dim:#7a6f59; --line:#d4c6a4;
@@ -61,14 +61,13 @@
   .btn.line:hover{background:var(--ink);color:var(--bg)}
   .snoop{margin-top:18px;font-family:"Space Mono";font-size:13px;color:var(--dim)}
   .snoop b{color:var(--green)}
-  .hero-art{position:relative;display:flex;align-items:center;justify-content:center;min-height:340px}
-  .bigmark{width:min(400px,90%);filter:drop-shadow(3px 6px 11px rgba(0,0,0,.22))}
-  .sticker{position:absolute;font-family:Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.5px;font-size:15px;background:var(--ink);color:var(--bg);padding:8px 13px;border-radius:4px;box-shadow:3px 3px 0 var(--pink);white-space:nowrap}
-  .sticker.st1{top:4%;left:-2%;transform:rotate(-8deg);background:var(--pink);color:var(--bg);box-shadow:3px 3px 0 var(--ink)}
-  .sticker.st2{bottom:8%;right:-4%;transform:rotate(5deg)}
-  .sticker.st3{bottom:-2%;left:8%;transform:rotate(-4deg);background:var(--green);color:var(--bg);box-shadow:3px 3px 0 var(--ink)}
-  .sticker.st4{top:-2%;right:14%;transform:rotate(12deg);font-size:30px;background:transparent;box-shadow:none;padding:0}
-  @media(max-width:760px){.hero{grid-template-columns:1fr;gap:8px} .hero-art{min-height:250px;margin-top:6px} .bigmark{width:58%}}
+  .hero-art{position:relative;display:flex;align-items:center;justify-content:center;min-height:380px}
+  .catstage{position:relative;width:min(500px,98%);aspect-ratio:64/82}
+  .meme-text{position:absolute;inset:0;width:100%;height:100%;z-index:1;filter:drop-shadow(0 2px 5px rgba(0,0,0,.3))}
+  .mt{font-family:'Luckiest Guy',Anton,sans-serif;fill:url(#shine);stroke:var(--ink);stroke-width:11;paint-order:stroke;letter-spacing:1px}
+  .bigmark{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:87%;z-index:2;
+    filter:drop-shadow(0 0 24px rgba(229,53,107,.6)) drop-shadow(0 0 54px rgba(198,244,50,.4)) drop-shadow(2px 7px 10px rgba(0,0,0,.22))}
+  @media(max-width:760px){.hero{grid-template-columns:1fr;gap:8px} .hero-art{min-height:320px;margin-top:6px} .catstage{width:80%}}
 
   .marq{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);overflow:hidden;white-space:nowrap;padding:13px 0;margin-top:58px;background:var(--ink)}
   .marq div{display:inline-block;animation:slide 22s linear infinite;font-family:Anton;font-size:26px;text-transform:uppercase;letter-spacing:1px;color:var(--bg)}
@@ -87,9 +86,10 @@
   .rule p{font-size:clamp(20px,3.4vw,34px);font-family:Anton;text-transform:uppercase;letter-spacing:.5px}
   .rule.big p{color:var(--pink)}
 
-  .loot{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;margin-top:28px;border:2px solid var(--ink)}
-  .loot div{padding:24px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);background:var(--panel)}
-  .loot .ic{font-size:26px}
+  .loot{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:28px}
+  .loot div{padding:22px;border:2px solid var(--ink);background:var(--panel);transition:transform .16s,box-shadow .16s}
+  .loot div:hover{transform:translate(-4px,-4px);box-shadow:7px 7px 0 var(--pink)}
+  .loot .ic{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;font-size:26px;border:2px solid var(--ink);border-radius:13px;background:var(--bg);margin-bottom:12px}
   .loot h3{font-family:Inter,sans-serif;font-weight:700;text-transform:uppercase;font-size:16px;margin:12px 0 6px;letter-spacing:.3px}
   .loot p{font-size:14px;color:var(--dim)}
 
@@ -141,7 +141,24 @@
       <div class="snoop">🌿 your data · your turf · laid-back, local &amp; nobody's business but yours</div>
     </div>
     <div class="hero-art">
-      <img class="bigmark" src="cat.png" alt="PURA-67 CLUB — cool cat in pura67 shades" />
+      <div class="catstage">
+        <svg class="meme-text" viewBox="0 0 640 820" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <defs>
+            <path id="arcTop" d="M 82 206 Q 320 40 558 206" fill="none" />
+            <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="640" y2="0">
+              <stop offset="0" stop-color="#ffffff" />
+              <stop offset="0.42" stop-color="#ffffff" />
+              <stop offset="0.5" stop-color="#ffd86b" />
+              <stop offset="0.58" stop-color="#ffffff" />
+              <stop offset="1" stop-color="#ffffff" />
+              <animateTransform attributeName="gradientTransform" type="translate" from="-640 0" to="640 0" dur="2.6s" repeatCount="indefinite" />
+            </linearGradient>
+          </defs>
+          <text class="mt" font-size="116"><textPath href="#arcTop" startOffset="50%" text-anchor="middle">PURA-67</textPath></text>
+          <text class="mt" x="320" y="772" font-size="134" text-anchor="middle">CLUB</text>
+        </svg>
+        <img class="bigmark" src="cat.png" alt="PURA-67 CLUB — cool cat in pura67 shades" />
+      </div>
     </div>
   </header>
 
