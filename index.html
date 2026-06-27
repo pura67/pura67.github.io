@@ -46,6 +46,9 @@
   .navr{display:flex;gap:20px;font-size:13px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;align-items:center}
   .navr a:hover{color:var(--ink)}
   .navr .join{color:var(--pink);font-weight:700}
+  .navtoggle{display:none}
+  .hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:32px;height:32px;cursor:pointer}
+  .hamburger span{display:block;width:26px;height:3px;border-radius:2px;background:var(--ink);transition:transform .22s,opacity .22s}
 
   .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:center;padding:54px 0 44px}
   .tag{font-family:"Space Mono";font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--pink)}
@@ -73,7 +76,12 @@
   @media(max-width:620px){
     nav{flex-wrap:wrap;gap:10px 14px;padding:14px 0}
     .logo{font-size:18px} .logo img{height:24px;width:24px}
-    .navr{width:100%;flex-wrap:wrap;justify-content:flex-start;gap:13px 16px;font-size:12px}
+    .hamburger{display:flex}
+    .navr{display:none;width:100%;flex-direction:column;align-items:flex-start;gap:18px;font-size:15px;padding:8px 0 4px}
+    .navtoggle:checked ~ .navr{display:flex}
+    .navtoggle:checked ~ .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+    .navtoggle:checked ~ .hamburger span:nth-child(2){opacity:0}
+    .navtoggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
   }
 
   .marq{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);overflow:hidden;white-space:nowrap;padding:13px 0;margin-top:58px;background:var(--ink)}
@@ -126,7 +134,9 @@
 <div class="wrap">
 
   <nav>
-    <div class="logo"><img src="logo.svg" alt="" />PURA67 CLUB</div>
+    <div class="logo"><img src="logo.svg" alt="" />PURA NAVIGATOR</div>
+    <input type="checkbox" id="navtoggle" class="navtoggle" hidden />
+    <label for="navtoggle" class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
     <div class="navr">
       <a href="#rules">Rules</a>
       <a href="#loot">The Loot</a>
