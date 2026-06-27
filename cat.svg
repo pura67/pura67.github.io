@@ -1,0 +1,18 @@
+<svg width="280" height="240" viewBox="0 0 280 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="cool cat with pura67 shades">
+  <path d="M74 104 L64 40 L130 84 Z" fill="#15120b"/>
+  <path d="M206 104 L216 40 L150 84 Z" fill="#15120b"/>
+  <path d="M84 92 L78 58 L112 82 Z" fill="#e5356b"/>
+  <path d="M196 92 L202 58 L168 82 Z" fill="#e5356b"/>
+  <ellipse cx="140" cy="138" rx="84" ry="72" fill="#15120b"/>
+  <rect x="62" y="110" width="68" height="44" rx="22" fill="#15120b" stroke="#e9e0cc" stroke-width="4"/>
+  <rect x="150" y="110" width="68" height="44" rx="22" fill="#15120b" stroke="#e9e0cc" stroke-width="4"/>
+  <rect x="128" y="126" width="24" height="9" rx="4" fill="#e9e0cc"/>
+  <path d="M89.3 134.2 L89.0 133.6 L88.8 133.0 L88.7 132.3 L88.6 131.6 L88.6 131.0 L88.6 130.3 L88.7 129.6 L88.9 128.9 L89.1 128.2 L89.4 127.6 L89.8 126.9 L90.2 126.3 L90.7 125.8 L91.2 125.2 L91.8 124.7 L92.4 124.3 L93.1 123.9 L93.9 123.6 L94.6 123.4 L95.4 123.2 L96.2 123.1 L97.0 123.1 L97.8 123.1 L98.7 123.2 L99.5 123.4 L100.3 123.7 L101.1 124.0 L101.8 124.5 L102.5 124.9 L103.2 125.5 L103.8 126.1 L104.4 126.8 L104.9 127.6 L105.4 128.4 L105.8 129.2 L106.1 130.1 L106.3 131.0 L106.4 131.9 L106.5 132.9 L106.4 133.8 L106.3 134.8 L106.1 135.8 L105.8 136.7 L105.4 137.6 L104.9 138.5 L104.4 139.3 L103.7 140.1 L103.0 140.8 L102.2 141.5 L101.4 142.1 L100.5 142.7 L99.5 143.1 L98.5 143.5 L97.5 143.7 L96.4 143.9 L95.3 144.0 L94.2 144.0 L93.1 143.8 L92.0 143.6 L91.0 143.3 L89.9 142.9 L88.9 142.3 L88.0 141.7 L87.0 141.0 L86.2 140.2 L85.4 139.4 L84.7 138.4 L84.1 137.4 L83.6 136.3 L83.2 135.2 L82.8 134.0 L82.6 132.8 L82.5 131.6 L82.5 130.4 L82.6 129.2 L82.9 127.9 L83.2 126.7 L83.6 125.5 L84.2 124.4 L84.9 123.3 L85.6 122.3 L86.5 121.3 L87.5 120.4 L88.5 119.6 L89.6 118.9 L90.8 118.3 L92.0 117.8 L93.3 117.4 L94.6 117.1 L96.0 117.0" fill="none" stroke="#c6f432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M170 123 H 200 L 187 147" fill="none" stroke="#c6f432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M132 166 L148 166 L140 175 Z" fill="#e5356b"/>
+  <path d="M118 184 Q140 200 164 182" fill="none" stroke="#e9e0cc" stroke-width="5" stroke-linecap="round"/>
+  <g stroke="#e9e0cc" stroke-width="3" stroke-linecap="round">
+    <path d="M158 176 L218 168"/><path d="M158 186 L218 192"/>
+    <path d="M122 176 L62 168"/><path d="M122 186 L62 192"/>
+  </g>
+</svg>

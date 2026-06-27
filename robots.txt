@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pura67.xyz/sitemap.xml
